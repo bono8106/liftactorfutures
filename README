@@ -1,0 +1,1 @@
+Demonstrate the behavior of non-blocking futures (LAFuture) and actors (LiftActor) in the Lift framework.
