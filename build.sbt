@@ -7,6 +7,7 @@ scalacOptions <+= scalaSource in Compile map { "-P:sxr:base-directory:" + _.getA
 resolvers += "Scala Tools Releases" at "http://scala-tools.org/repo-releases/"
 
 libraryDependencies ++= Seq(
-  "net.liftweb" %% "lift-actor" % "2.4-RC1" withSources
+  "net.liftweb" %% "lift-actor" % "2.4-RC1" withSources,
+  "ch.qos.logback" % "logback-classic" % "1.0.0" withSources
 )
 

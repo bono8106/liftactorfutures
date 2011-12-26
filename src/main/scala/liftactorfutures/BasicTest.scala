@@ -1,7 +1,17 @@
 package liftactorfutures
 
-object BasicTest extends App {
+import net.liftweb.actor.LiftActor
 
-  println("Hello world")
+object BasicTest extends App {
+  
+  case object Message
+
+  object HelloActor extends LiftActor {
+    override def messageHandler: PartialFunction[Any, Unit] = {
+      case Message => println("Hello world")
+    }
+  }
+
+  HelloActor ! Message
 
 }
