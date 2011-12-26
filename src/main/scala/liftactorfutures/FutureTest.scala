@@ -34,6 +34,8 @@ object FutureTest extends App {
     }
   }
 
+  log("Application starting")
+
   ClientActor ! Go
 
 }
